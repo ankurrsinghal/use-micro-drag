@@ -1,6 +1,18 @@
 {
   "name": "use-micro-drag",
-  "version": "0.0.3",
+  "description": "A micro wafer thin react hook library to make draggable components.",
+  "author": "Ankur Singhal",
+  "version": "0.0.4",
+  "keywords": [
+    "react",
+    "react-hooks",
+    "drag-and-drop",
+    "drag"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ankurrsinghal/use-micro-drag.git"
+  },
   "type": "module",
   "files": [
     "dist"
