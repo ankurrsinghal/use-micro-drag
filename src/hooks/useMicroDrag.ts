@@ -10,7 +10,7 @@ export type DragCallbackState = {
   e: PointerEvent;
 };
 
-export function useMicroDrag<T extends SVGElement>(
+export function useMicroDrag<T extends Element>(
   cb: (state: DragCallbackState) => void
 ) {
   const ref = useRef<T>(null);
