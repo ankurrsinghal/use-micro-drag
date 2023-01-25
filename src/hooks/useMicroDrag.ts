@@ -7,6 +7,8 @@ export type DragCallbackState = {
   startY: number;
   dx: number;
   dy: number;
+  movX: number;
+  movY: number;
   nativeEvent: PointerEvent;
 };
 
@@ -29,6 +31,8 @@ export function useMicroDrag<T extends Element>(
       nativeEvent: e.nativeEvent,
       startX: e.clientX,
       startY: e.clientY,
+      movX: e.movementX,
+      movY: e.movementY,
     });
   }, []);
 
@@ -44,6 +48,8 @@ export function useMicroDrag<T extends Element>(
         nativeEvent: e.nativeEvent,
         startX: offsetRef.current[0],
         startY: offsetRef.current[1],
+        movX: e.movementX,
+        movY: e.movementY,
       });
     }
   }, []);
@@ -61,6 +67,8 @@ export function useMicroDrag<T extends Element>(
       nativeEvent: e.nativeEvent,
       startX: offsetRef.current[0],
       startY: offsetRef.current[1],
+      movX: e.movementX,
+      movY: e.movementY,
     });
   }, []);
 
