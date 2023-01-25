@@ -15,6 +15,8 @@ function Box() {
         //   dragState.startY => y coordinate of the pointer when user pointed down
         //   dragState.dx => dx movement in the horizontal direction wrt startX
         //   dragState.dy => dy movement in the vertical direction wrt startY
+        //   dragState.movX => movement in the horizontal direction wrt last event
+        //   dragState.movY => movement in the vertical direction wrt last event
         //   dragState.nativeEvent => native DOM event, use this for preventDefault/stopPropagation
     }
   );
