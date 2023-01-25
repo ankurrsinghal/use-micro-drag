@@ -9,7 +9,7 @@ export type DragCallbackState = {
   dy: number;
   movX: number;
   movY: number;
-  nativeEvent: PointerEvent;
+  event: React.PointerEvent;
 };
 
 export function useMicroDrag<T extends Element>(
@@ -28,7 +28,7 @@ export function useMicroDrag<T extends Element>(
       end: false,
       dx: 0,
       dy: 0,
-      nativeEvent: e.nativeEvent,
+      event: e,
       startX: e.clientX,
       startY: e.clientY,
       movX: e.movementX,
@@ -45,7 +45,7 @@ export function useMicroDrag<T extends Element>(
         end: false,
         dx,
         dy,
-        nativeEvent: e.nativeEvent,
+        event: e,
         startX: offsetRef.current[0],
         startY: offsetRef.current[1],
         movX: e.movementX,
@@ -64,7 +64,7 @@ export function useMicroDrag<T extends Element>(
       end: true,
       dx,
       dy,
-      nativeEvent: e.nativeEvent,
+      event: e,
       startX: offsetRef.current[0],
       startY: offsetRef.current[1],
       movX: e.movementX,

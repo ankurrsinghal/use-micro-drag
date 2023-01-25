@@ -2,7 +2,7 @@
   "name": "use-micro-drag",
   "description": "A micro wafer thin react hook library to make draggable components.",
   "author": "Ankur Singhal",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "keywords": [
     "react",
     "react-hooks",

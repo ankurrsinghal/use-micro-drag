@@ -17,7 +17,7 @@ function Box() {
         //   dragState.dy => dy movement in the vertical direction wrt startY
         //   dragState.movX => movement in the horizontal direction wrt last event
         //   dragState.movY => movement in the vertical direction wrt last event
-        //   dragState.nativeEvent => native DOM event, use this for preventDefault/stopPropagation
+        //   dragState.event => Synthetic React event, use this for preventDefault/stopPropagation
     }
   );
 
